@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test verbose="2" name="Default test">
+    <classes>
+      <class name="G_mail_automation.Unread_mails.check_unread_mails"/>
+    </classes>
+  </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="G_mail_automation.Unread_mails.check_unread_mails">
+        <methods>
+          <include name="unread_mails"/>
+          <include name="launchbrowser"/>
+          <include name="closebrowser"/>
+          <include name="compose_mail"/>
+        </methods>
+      </class> <!-- G_mail_automation.Unread_mails.check_unread_mails -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
